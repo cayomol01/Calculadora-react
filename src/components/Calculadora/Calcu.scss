@@ -3,12 +3,13 @@
     height: 70%;
     margin-left: auto;
     margin-right: auto;
-    background: red;
+    background: black;
     display: grid;
     transform: translateY(30%);
+    padding:0;
+    border:0;
 
     grid-template-areas: 
-    "A A A A A  A A A A A  A A A A A  A A A A A"
     "A A A A A  A A A A A  A A A A A  A A A A A"
     "B B B B B  G G G G G  K K K K K  P P P P P"
     "C C C C C  H H H H H  L L L L L  Q Q Q Q Q"
@@ -19,120 +20,176 @@
 
 .display{
     grid-area: A;
-    background: blue;
+    background: #202020;
+    color: white;
+    text-align: right;
+    font-size: 75px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    border:0;
+    margin:0;
+    padding-top: 60px;
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 5px;
     align-items: center;
+    gap: 0px;
+    outline: 1px solid #202020;
+}
+
+
+.keyboard{
+    background: #c7c7c7;
+    color: rgb(75, 75, 75);
+    font-size: 36px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    padding:0;
+    border:0;
+    margin:0;
+    outline: 1px solid #949599;
+}
+
+.keyboard:hover{
+    opacity: .9;
+}
+
+.keyboard:active{
+    opacity: .8;
+}
+
+.func{
+    background: #afb0b5;
+    color: rgb(75, 75, 75);
+    font-size: 36px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    padding:0;
+    border:0;
+    margin:0;
+    outline: 1px solid #949599;
+}
+
+.func:hover{
+    opacity: .9;
+}
+
+.func:active{
+    opacity: .8;
+    outline: 1px solid #949599;
+}
+
+.oper{
+    background: #f98410;
+    color: #fff6f9;
+    outline: 1px solid #ca5200;
+    font-size: 36px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    padding:0;
+    border:0;
+    margin:0;
+}
+
+.oper:hover{
+    opacity: .9;
+}
+
+.oper:active{
+    opacity: .8;
 }
 
 .c {
     grid-area: B;
-    background: green;
     align-items: center;
 }
 
 .masmenos{
     grid-area: G;
-    background: yellow;
     align-items: center;
 }
 
 .porciento{
     grid-area: K;
-    background: orange;
     align-items: center;
 }
 
 .division{
     grid-area: P;
-    background: purple;
     align-items: center;
 }
 
 .siete{
     grid-area: C;
-    background: red;
     align-items: center;
 }
 
 .ocho{
     grid-area: H;
-    background: blue;
     align-items: center;
 }
 
 .nueve {
     grid-area: L;
-    background: green;
     align-items: center;
 }
 
 .por {
     grid-area: Q;
-    background: yellow;
     align-items: center;
 }
 
 .cuatro{
     grid-area: D;
-    background: red;
     align-items: center;
 }
 
 .cinco{
     grid-area: I;
-    background: blue;
     align-items: center;
 }
 
 .seis{
     grid-area: M;
-    background: green;
     align-items: center;
 }
 
 .menos{
     grid-area: R;
-    background: yellow;
     align-items: center;
 }
 
 .uno{
     grid-area: E;
-    background: red;
     align-items: center;
 }
 
 .dos{
     grid-area: J;
-    background: blue;
     align-items: center;
 }
 
 .tres{
     grid-area: N;
-    background: green;
     align-items: center;
 }
 
 .mas{
     grid-area: S;
-    background: yellow;
     align-items: center;
 }
 
 .cero{
     grid-area: F;
-    background: red;
     align-items: center;
 }
 
 .punto{
     grid-area: O;
-    background: blue;
     align-items: center;
 }
 
 .igual{
     grid-area: T;
-    background: green;
     align-items: center;
 }
