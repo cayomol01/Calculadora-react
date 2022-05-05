@@ -1,0 +1,138 @@
+.container{
+    width:20%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background: red;
+    display: grid;
+    transform: translateY(30%);
+
+    grid-template-areas: 
+    "A A A A A  A A A A A  A A A A A  A A A A A"
+    "A A A A A  A A A A A  A A A A A  A A A A A"
+    "B B B B B  G G G G G  K K K K K  P P P P P"
+    "C C C C C  H H H H H  L L L L L  Q Q Q Q Q"
+    "D D D D D  I I I I I  M M M M M  R R R R R"
+    "E E E E E  J J J J J  N N N N N  S S S S S"
+    "F F F F F  F F F F F  O O O O O  T T T T T";
+}
+
+.display{
+    grid-area: A;
+    background: blue;
+    align-items: center;
+}
+
+.c {
+    grid-area: B;
+    background: green;
+    align-items: center;
+}
+
+.masmenos{
+    grid-area: G;
+    background: yellow;
+    align-items: center;
+}
+
+.porciento{
+    grid-area: K;
+    background: orange;
+    align-items: center;
+}
+
+.division{
+    grid-area: P;
+    background: purple;
+    align-items: center;
+}
+
+.siete{
+    grid-area: C;
+    background: red;
+    align-items: center;
+}
+
+.ocho{
+    grid-area: H;
+    background: blue;
+    align-items: center;
+}
+
+.nueve {
+    grid-area: L;
+    background: green;
+    align-items: center;
+}
+
+.por {
+    grid-area: Q;
+    background: yellow;
+    align-items: center;
+}
+
+.cuatro{
+    grid-area: D;
+    background: red;
+    align-items: center;
+}
+
+.cinco{
+    grid-area: I;
+    background: blue;
+    align-items: center;
+}
+
+.seis{
+    grid-area: M;
+    background: green;
+    align-items: center;
+}
+
+.menos{
+    grid-area: R;
+    background: yellow;
+    align-items: center;
+}
+
+.uno{
+    grid-area: E;
+    background: red;
+    align-items: center;
+}
+
+.dos{
+    grid-area: J;
+    background: blue;
+    align-items: center;
+}
+
+.tres{
+    grid-area: N;
+    background: green;
+    align-items: center;
+}
+
+.mas{
+    grid-area: S;
+    background: yellow;
+    align-items: center;
+}
+
+.cero{
+    grid-area: F;
+    background: red;
+    align-items: center;
+}
+
+.punto{
+    grid-area: O;
+    background: blue;
+    align-items: center;
+}
+
+.igual{
+    grid-area: T;
+    background: green;
+    align-items: center;
+}
