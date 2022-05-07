@@ -65,7 +65,6 @@ export default function Calcu() {
       else{
         setOperandos([parseInt(display)]);
       }
-      setDisplay("0")
       setOperacion(val);
     }
 
