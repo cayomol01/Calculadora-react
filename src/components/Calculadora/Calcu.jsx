@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 import React, { useState } from "react"
 import "./Calcu.scss"
 
@@ -101,26 +102,26 @@ export default function Calcu() {
 
   return (
     <div className="container">
-      <div className="display">{display}</div>
-      <button className="func c" type="button" onClick={handleClear}>C</button>
-      <button className="func masmenos" type="button" onClick={() => handleOperacion("⁺∕₋")}>⁺∕₋</button>
-      <button className="func porciento" type="button" onClick={() => handleOperacion("%")}>%</button>
-      <button className="oper division" type="button" onClick={() => handleOperacion("/")}>/</button>
-      <button className="keyboard siete" type="button" onClick={() => handleDisplay("7")}>7</button>
-      <button className="keyboard ocho" type="button" onClick={() => handleDisplay("8")}>8</button>
-      <button className="keyboard nueve" type="button" onClick={() => handleDisplay("9")}>9</button>
-      <button className="oper por" type="button" onClick={() => handleOperacion("*")}>x</button>
-      <button className="keyboard cuatro" type="button" onClick={() => handleDisplay("4")}>4</button>
-      <button className="keyboard cinco" type="button" onClick={() => handleDisplay("5")}>5</button>
-      <button className="keyboard seis" type="button" onClick={() => handleDisplay("6")}>6</button>
-      <button className="oper menos" type="button" onClick={() => handleOperacion("-")}>-</button>
-      <button className="keyboard uno" type="button" onClick={() => handleDisplay("1")}>1</button>
-      <button className="keyboard dos" type="button" onClick={() => handleDisplay("2")}>2</button>
-      <button className="keyboard tres" type="button" onClick={() => handleDisplay("3")}>3</button>
-      <button className="oper mas" type="button" onClick={() => handleOperacion("+")}>+</button>
-      <button className="keyboard cero" type="button" onClick={() => handleDisplay("0")}>0</button>
-      <button className="keyboard punto" type="button" onClick={() => handleDisplay(".")}>.</button>
-      <button className="keyboard igual" type="button" onClick={() => handleOperacion("")}>=</button>
+      <div className="display" data-testid="Testdisplay">{display}</div>
+      <button className="func c" type="button" onClick={handleClear} data-testid="TestC">C</button>
+      <button className="func masmenos" type="button" onClick={() => handleOperacion("⁺∕₋")} data-testid="Testmasmenos">⁺∕₋</button>
+      <button className="func porciento" type="button" onClick={() => handleOperacion("%")} data-testid="Testmodulo">%</button>
+      <button className="oper division" type="button" onClick={() => handleOperacion("/")} data-testid="Testdivision">/</button>
+      <button className="keyboard siete" type="button" onClick={() => handleDisplay("7")} data-testid="Testsiete">7</button>
+      <button className="keyboard ocho" type="button" onClick={() => handleDisplay("8")} data-testid="Testocho">8</button>
+      <button className="keyboard nueve" type="button" onClick={() => handleDisplay("9")} data-testid="Testnueve">9</button>
+      <button className="oper por" type="button" onClick={() => handleOperacion("*")} data-testid="Testmultiplicacion">x</button>
+      <button className="keyboard cuatro" type="button" onClick={() => handleDisplay("4")} data-testid="Testcuatro">4</button>
+      <button className="keyboard cinco" type="button" onClick={() => handleDisplay("5")} data-testid="Testcinco">5</button>
+      <button className="keyboard seis" type="button" onClick={() => handleDisplay("6")} data-testid="Testseis">6</button>
+      <button className="oper menos" type="button" onClick={() => handleOperacion("-")} data-testid="Testmenos">-</button>
+      <button className="keyboard uno" type="button" onClick={() => handleDisplay("1")} data-testid="Testuno">1</button>
+      <button className="keyboard dos" type="button" onClick={() => handleDisplay("2")} data-testid="Testdos">2</button>
+      <button className="keyboard tres" type="button" onClick={() => handleDisplay("3")} data-testid="Testtres">3</button>
+      <button className="oper mas" type="button" onClick={() => handleOperacion("+")} data-testid="Testsuma">+</button>
+      <button className="keyboard cero" type="button" onClick={() => handleDisplay("0")} data-testid="Testcero">0</button>
+      <button className="keyboard punto" type="button" onClick={() => handleDisplay(".")} data-testid="Testpunto">.</button>
+      <button className="keyboard igual" type="button" onClick={() => handleOperacion("")} data-testid="Testigual">=</button>
 
     </div>
   )

@@ -1,3 +1,7 @@
 module.exports = {
-  setupFilesAfterEnv: ["<rootDir>/setupTests.js"],
+  testEnvironment: "jsdom",
+  moduleNameMapper: {
+    "^.+\\.(css|less|scss)$": "babel-jest",
+  },
+  setupFilesAfterEnv: ["<rootDir>/setUpTest.js"],
 }
