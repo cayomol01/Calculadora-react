@@ -2,12 +2,20 @@
 /* eslint-disable no-unused-vars */
 import React from "react"
 import ReactDOM from "react-dom"
-import { render, screen } from "@testing-library/react"
+import {
+  render, screen, fireEvent,
+} from "@testing-library/react"
 import userEvent from "@testing-library/user-event"
 import "@testing-library/jest-dom/extend-expect"
 // eslint-disable-next-line import/extensions
 import Calcu from "./Calcu.jsx"
 
+// Renders correctly
+it("Renders calcu", () => {
+  render(<Calcu />)
+})
+
+// Buttons work correctly and have the values applied to them
 test("Test B1 ", () => {
   render(<Calcu />)
   const testElement = screen.getByTestId("Testuno")
@@ -45,4 +53,67 @@ test("Test B4 ", () => {
   userEvent.click(button4)
   expect(testElement).toBeInTheDocument()
   expect(button4).toHaveTextContent("4")
+})
+
+test("Test B5 ", () => {
+  render(<Calcu />)
+  const testElement = screen.getByTestId("Testcinco")
+  const button5 = screen.getByText("5")
+  userEvent.click(button5)
+  expect(testElement).toBeInTheDocument()
+  expect(button5).toHaveTextContent("5")
+})
+
+test("Test B6 ", () => {
+  render(<Calcu />)
+  const testElement = screen.getByTestId("Testseis")
+  const button6 = screen.getByText("6")
+  userEvent.click(button6)
+  expect(testElement).toBeInTheDocument()
+  expect(button6).toHaveTextContent("6")
+})
+
+test("Test B7 ", () => {
+  render(<Calcu />)
+  const testElement = screen.getByTestId("Testsiete")
+  const button7 = screen.getByText("7")
+  userEvent.click(button7)
+  expect(testElement).toBeInTheDocument()
+  expect(button7).toHaveTextContent("7")
+})
+
+test("Test B8 ", () => {
+  render(<Calcu />)
+  const testElement = screen.getByTestId("Testocho")
+  const button8 = screen.getByText("8")
+  userEvent.click(button8)
+  expect(testElement).toBeInTheDocument()
+  expect(button8).toHaveTextContent("8")
+})
+
+test("Test B9 ", () => {
+  render(<Calcu />)
+  const testElement = screen.getByTestId("Testnueve")
+  const button9 = screen.getByText("9")
+  userEvent.click(button9)
+  expect(testElement).toBeInTheDocument()
+  expect(button9).toHaveTextContent("9")
+})
+
+test("Test Punto ", () => {
+  render(<Calcu />)
+  const testElement = screen.getByTestId("Testpunto")
+  const button9 = screen.getByText(".")
+  fireEvent.click(button9)
+  expect(testElement).toBeInTheDocument()
+  expect(button9).toHaveTextContent(".")
+})
+
+test("Test Cero ", () => {
+  render(<Calcu />)
+  const testElement = screen.getByTestId("Testcero")
+  const button9 = screen.getAllByText("0")[1]
+  fireEvent.click(button9)
+  expect(testElement).toBeInTheDocument()
+  expect(button9).toHaveTextContent("0")
 })
